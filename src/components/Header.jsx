@@ -4,7 +4,7 @@ import "./styles/Header.css";
 
 const Header = () => {
   return (
-    <div className="nav-app">
+    <div className="nav-app container-fluid">
       <div className="logo-name">
         <h3>AltSchool Exam Project</h3>
       </div>

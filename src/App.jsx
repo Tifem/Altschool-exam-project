@@ -8,7 +8,7 @@ import NotFound from "./components/NotFound";
 import About from "./components/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import {ErrorBoundary} from 'react-error-boundary';
+import { ErrorBoundary } from 'react-error-boundary';
 
 
 function ErrorFallback({ error }) {
