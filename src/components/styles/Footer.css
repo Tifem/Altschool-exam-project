@@ -1,0 +1,22 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.footer-app{
+    background:#150050;
+    color:white;
+    margin-top:635px;
+    padding:5px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    
+}
+.footer-name{
+    text-align: center;
+  font-size:14px;
+}

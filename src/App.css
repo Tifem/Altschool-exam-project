@@ -1,0 +1,39 @@
+.home-name {
+  text-align: center;
+  vertical-align: center;
+  font-size:42px;
+  letter-spacing:1px;
+  margin:250px auto;
+  color:#150050;
+}
+.more-btn{
+  background-color:#3F0071;
+  color:white;
+  padding:8px 10px;
+  border-radius:5px;
+  margin:20px 0px;
+}
+.view-git-btn{
+  background-color:#FB2576;
+  color:black;
+  padding:8px;
+  border-radius:5px;
+}
+.pages-btnn{
+   background-color:#3F0071;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  padding:12px;
+  border-radius:5px;
+  margin:10px;
+  border:none;
+}
+.pages-btn{
+   background-color:#FB2576;
+  color:black;
+  padding:12px;
+  border-radius:5px;
+  margin:10px;
+  border:none;
+}
