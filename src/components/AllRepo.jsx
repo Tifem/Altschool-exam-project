@@ -4,11 +4,11 @@ import useFetch from "../components/UseFetch";
 
 function App() {
   const [page, setPage] = useState(1);
-  const { loading, error, data } = useFetch(
+  const { isLoading, error, data } = useFetch(
     `https://api.github.com/users/Tifem/repos?per_page=100`
   );
 
-  console.log({ loading, error, data });
+  console.log({ isLoading, error, data });
 
   const PER_PAGE = 6;
 
@@ -18,11 +18,11 @@ function App() {
 
   const skip = page * PER_PAGE - PER_PAGE;
 
-  if (loading) {
+  if (isLoading) {
     return <>Loading...</>;
   }
 
-  if (!loading && error) {
+  if (!isLoading && error) {
     return <>Error</>;
   }
 
@@ -41,11 +41,11 @@ function App() {
                   <p className="card-text">{each.description}</p>
                   <Link
                     to={`/all-repo/${index}`}
-                    className="card-link more-btn "
+                    className="card-link btn btn-dark"
                   >
                     More
                   </Link>
-                  <a href={each.html_url} className="card-link view-git-btn">
+                  <a href={each.html_url} className="card-link btn btn-primary">
                     View on Git
                   </a>
                 </div>
@@ -57,7 +57,7 @@ function App() {
 
       <div className="mt-5 d-flex justify-content-between">
         <button
-          className="pages-btn"
+          className="btn btn-primary"
           type="button"
           disabled={page <= 1}
           aria-disabled={page <= 1}
@@ -71,7 +71,7 @@ function App() {
         </p>
 
         <button
-          className="pages-btn"
+          className="btn btn-primary"
           type="button"
           disabled={page >= pages}
           aria-disabled={page >= pages}
@@ -81,10 +81,10 @@ function App() {
         </button>
       </div>
 
-      <div className="mt-3">
+      <div className="mt-3 text-center">
         {Array.from({ length: pages }, (_, index) => index + 1).map((each) => (
           <button
-            className="pages-btnn"
+            className="btn btn-dark mr-2"
             onClick={() => setPage(each)}
           >
             {each}

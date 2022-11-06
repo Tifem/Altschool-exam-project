@@ -1,9 +1,9 @@
-.nav-app{
+.header-app{
     display:flex;
     justify-content:space-between;
     align-items:center;
     background:#150050;
-    color:white;
+    color:white!important;
     width:100%;
   }
   .logo-name{
@@ -27,3 +27,6 @@
     color:white;
     font-weight:bolder;
   }
+.navbar-toggler-icon{
+  color:white;
+}
