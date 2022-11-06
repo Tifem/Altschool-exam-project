@@ -8,7 +8,7 @@ function Home() {
           name="description"
           content="This pages is my home page"
         />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://Altschool-Exam-Project.boluwatifej.repl.co" />
       </Helmet>
     <div className="container">
       <h1 className="home-name">Welcome to my Github Repository!</h1>
