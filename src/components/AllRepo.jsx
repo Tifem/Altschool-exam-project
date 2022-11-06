@@ -36,7 +36,7 @@ function App() {
           name="description"
           content="This pages is where I fetch and show the list of repositories from my github account."
         />
-        <link rel="canonical" href="/all-repo" />
+        <link rel="canonical" href="https://Altschool-Exam-Project.boluwatifej.repl.co/all-repo" />
       </Helmet>
       <div className="App container my-5">
         <h1 className="mb-3">List of all Repositories</h1>

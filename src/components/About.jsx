@@ -27,7 +27,7 @@ const About = () => {
           name="description"
           content="This page from the app contains informations about me and my social handles"
         />
-        <link rel="canonical" href="/about" />
+        <link rel="canonical" href="https://Altschool-Exam-Project.boluwatifej.repl.co/about" />
       </Helmet>
       <div className="container my-5">
         <div className="row d-flex justify-content-center">
