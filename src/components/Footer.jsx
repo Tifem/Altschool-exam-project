@@ -1,13 +1,13 @@
 import React from "react";
-import "./styles/Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer-app bg-primary">
-      <div className="logo-name">
-        <h3 className="footer-name"> &copy; 2022. Made by Boluwatife Janet</h3>
-      </div>
-    </div>
+    <footer className="bg-primary w-100 text-center text-light py-2">
+      <p>
+        &copy; 2022. By Boluwatife Janet ( <i>Tife Janet</i> )
+      </p>
+    </footer>
   );
 };
+
 export default Footer;
