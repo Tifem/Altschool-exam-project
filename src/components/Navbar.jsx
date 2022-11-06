@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import {Helmet} from 'react-helmet-async';
+
 
 const NavBar = () => {
   let activeStyle = {
