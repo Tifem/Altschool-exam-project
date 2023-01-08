@@ -1,20 +1,20 @@
-import { useState } from "react";
+import React, { useState, useContext } from "react";
+// import RepoContext from "./RepoContext";
 import { Link } from "react-router-dom";
-import useFetch from "../components/UseFetch";
 import { Helmet } from 'react-helmet-async';
+import UseFetch from "./UseFetch";
 
 
-function App() {
+const App = () => {
   const [page, setPage] = useState(1);
-  const { isLoading, error, data } = useFetch(
+  // const { isLoading, error, repos } = React.useContext(RepoContext);
+  const { isLoading, error, data: repos } = UseFetch(
     `https://api.github.com/users/Tifem/repos?per_page=100`
   );
 
-  console.log({ isLoading, error, data });
-
   const PER_PAGE = 6;
 
-  const total = data?.length;
+  const total = repos?.length;
 
   const pages = 6;
 
@@ -42,7 +42,7 @@ function App() {
         <h1 className="mb-3">List of all Repositories</h1>
 
         <div className="row">
-          {data?.slice(skip, skip + PER_PAGE).map((each, index) => {
+          {repos?.slice(skip, skip + PER_PAGE).map((each, index) => {
             const name = `${each.name} ${each.description}`;
             return (
               <div className="col-md-4 mb-3">
